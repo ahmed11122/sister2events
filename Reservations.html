@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;" lang="en"><head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>Reservations</title>
+    <link rel="stylesheet" href="nicepage.css" media="screen">
+<link rel="stylesheet" href="Reservations.css" media="screen">
+    <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
+    <meta name="generator" content="Nicepage 7.10.11, nicepage.com">
+    <link rel="icon" href="images/favicon.png">
+    
+    
+    
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+    <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster:400|Merriweather:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Lato:100,100i,300,300i,400,400i,700,700i,900,900i">
+    <link id="u-header-footer-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+    <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": "SisterEvents",
+		"logo": "images/5415716987755163692-removebg-preview2.png",
+		"sameAs": [
+				"https://www.facebook.com/people/Sister-Events/100066927005162/?rdid=9pzD5zMqdYVpsdXo&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F19NVVPK4Ya%2F",
+				"https://www.instagram.com/sisterevents2"
+		]
+}</script>
+    <meta name="theme-color" content="#0066ff">
+    <meta property="og:title" content="Reservations">
+    <meta property="og:description" content="">
+    <meta property="og:type" content="website">
+  <meta name="referrer" content="origin"><script>
+    function gdprConfirmed() {
+        return true;
+    }
+    function dynamicLoadScript() {
+        var script = document.createElement('script');
+        script.src = 'https://www.google.com/recaptcha/api.js?render=6LceXnUrAAAAAOr6QwPsDyXbV19j371yX0jUyEgD';
+        script.async = true;
+        document.body.appendChild(script);
+        script.onload = function() {
+            let event = new CustomEvent("recaptchaLoaded");
+            document.dispatchEvent(event);
+        };
+    }
+    function showRecaptchaError(error) {
+        error = error || '';
+        var formError = document.querySelector('.u-form-send-error');
+
+        if (formError) {
+            formError.innerText = 'Site Owner Error: ' + error.replace(/:[\s\S]*/, '');
+            formError.style.display = 'block';
+        }
+
+        console.error('Error in grecaptcha: ', error);
+    }
+    document.addEventListener('DOMContentLoaded', function () {
+        var confirmButton = document.querySelector('.u-cookies-consent .u-button-confirm');
+        if (confirmButton) {
+            confirmButton.onclick = dynamicLoadScript;
+        }
+    });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function(){
+            if (!gdprConfirmed()) {
+                return;
+            }
+            dynamicLoadScript();
+        });
+    </script>
+    <script>
+        document.addEventListener("recaptchaLoaded", function() {
+            if (!gdprConfirmed()) {
+                return;
+            }
+
+            (function (grecaptcha, sitekey, actions) {
+                var recaptcha = {
+                    execute: function (action, submitFormCb) {
+                        if (typeof grecaptcha === 'undefined' || typeof grecaptcha.execute !== 'function') {
+                            showRecaptchaError('reCAPTCHA script failed to load.');
+                            return;
+                        }
+
+                        grecaptcha.execute(sitekey, {action: action}).then((token) => {
+                            if (!token) {
+                                throw new Error('Empty token received from reCAPTCHA');
+                            }
+
+                            var forms = document.getElementsByTagName('form');
+
+                            for (var i = 0; i < forms.length; i++) {
+                                var response = forms[i].querySelector('[name="recaptchaResponse"]');
+
+                                if (!response) {
+                                    response = document.createElement('input');
+                                    response.setAttribute('type', 'hidden');
+                                    response.setAttribute('name', 'recaptchaResponse');
+                                    forms[i].appendChild(response);
+                                }
+
+                                response.value = token;
+                            }
+
+                            submitFormCb();
+                        }).catch((e) => {
+                            showRecaptchaError(e.message);
+                        });
+                    },
+
+                    executeContact: function (submitFormCb) {
+                        recaptcha.execute(actions['contact'], submitFormCb);
+                    }
+                };
+
+                window.recaptchaObject = recaptcha;
+            })(
+                grecaptcha,
+                
+                '6LceXnUrAAAAAOr6QwPsDyXbV19j371yX0jUyEgD',
+                {'contact': 'contact'}
+            );
+        });
+    </script>
+<meta data-intl-tel-input-cdn-path="intlTelInput/"></head>
+  <body data-path-to-root="./" data-include-products="true" class="u-body u-xl-mode" data-lang="en"><header class="u-clearfix u-header u-palette-3-light-3 u-header" id="header"><div class="u-clearfix u-sheet u-sheet-1">
+        <nav class="u-menu u-menu-one-level u-menu-open-right u-offcanvas u-menu-1" role="navigation" data-responsive-from="MD" data-submenu-level="with-reload" data-position="Menu">
+          <div class="menu-collapse" style="font-size: 1rem; letter-spacing: 0px; font-weight: 700; text-transform: uppercase;">
+            <a class="u-button-style u-custom-active-border-color u-custom-active-color u-custom-border u-custom-border-color u-custom-border-radius u-custom-borders u-custom-color u-custom-custom-border-radius u-custom-hover-border-color u-custom-hover-color u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-text-active-color u-custom-text-color u-custom-text-decoration u-custom-text-hover-color u-custom-text-shadow u-custom-top-bottom-menu-spacing u-file-icon u-hamburger-link u-nav-link u-text-active-white u-text-hover-palette-3-light-2 u-text-palette-3-base u-file-icon-1" href="#" tabindex="-1" aria-label="Open menu" aria-controls="29d8">
+              <img src="images/154342-b51b0545.png" alt="">
+            </a>
+          </div>
+          <div class="u-custom-menu u-nav-container">
+            <ul role="menubar" class="u-nav u-spacing-2 u-unstyled u-nav-1" data-animation-name="fadeIn" data-animation-duration="1000" data-animation-delay="0"><li role="none" class="u-nav-item"><a role="menuitem" class="u-active-palette-3-base u-border-2 u-border-active-palette-3-base u-border-hover-palette-3-base u-button-style u-hover-palette-3-light-2 u-nav-link u-palette-3-base u-radius u-text-active-white u-text-black u-text-hover-palette-3-base" href="./" style="--radius: 20px; padding: 13px 42px;">Home</a>
+</li><li role="none" class="u-nav-item"><a role="menuitem" class="u-active-palette-3-base u-border-2 u-border-active-palette-3-base u-border-hover-palette-3-base u-button-style u-hover-palette-3-light-2 u-nav-link u-palette-3-base u-radius u-text-active-white u-text-black u-text-hover-palette-3-base" href="About-us.html" style="--radius: 20px; padding: 13px 42px;">About us</a>
+</li><li role="none" class="u-nav-item"><a role="menuitem" class="u-active-palette-3-base u-border-2 u-border-active-palette-3-base u-border-hover-palette-3-base u-button-style u-hover-palette-3-light-2 u-nav-link u-palette-3-base u-radius u-text-active-white u-text-black u-text-hover-palette-3-base" href="products/products.html" style="--radius: 20px; padding: 13px 42px;">Store</a>
+</li></ul>
+          </div>
+          <div class="u-custom-menu u-nav-container-collapse" id="29d8" role="region" aria-label="Menu panel">
+            <div class="u-container-style u-inner-container-layout u-opacity u-opacity-70 u-opacity-var u-palette-3-light-1 u-sidenav u-sidenav-1">
+              <div class="u-inner-container-layout u-sidenav-overflow">
+                <div class="u-menu-close u-menu-close-1" tabindex="-1" aria-label="Close menu"></div>
+                <ul class="u-align-center u-custom-font u-nav u-popupmenu-items u-spacing-0 u-text-active-black u-text-hover-black u-text-white u-unstyled u-nav-2" role="menubar"><li role="none" class="u-nav-item"><a role="menuitem" class="u-button-style u-nav-link" href="./" style="padding-top: 16px; padding-bottom: 16px;">Home</a>
+</li><li role="none" class="u-nav-item"><a role="menuitem" class="u-button-style u-nav-link" href="About-us.html" style="padding-top: 16px; padding-bottom: 16px;">About us</a>
+</li><li role="none" class="u-nav-item"><a role="menuitem" class="u-button-style u-nav-link" href="products/products.html" style="padding-top: 16px; padding-bottom: 16px;">Store</a>
+</li></ul>
+              </div>
+            </div>
+            <div class="u-grey-70 u-menu-overlay u-opacity u-opacity-70 u-opacity-var" style="--opacity: 0.8;"></div>
+          </div>
+          <style class="menu-style">@media (max-width: 939px) {
+                    [data-responsive-from="MD"] .u-nav-container {
+                        display: none;
+                    }
+                    [data-responsive-from="MD"] .menu-collapse {
+                        display: block;
+                    }
+                }</style>
+        </nav>
+        <a href="./" data-page-id="2488725006" class="u-hover-feature u-image u-logo u-image-1" data-image-width="499" data-image-height="499">
+          <img src="images/5415716987755163692-removebg-preview2.png" class="u-logo-image u-logo-image-1" title="Home">
+        </a>
+      </div></header>
+    <section class="u-align-left u-clearfix u-palette-3-light-3 u-product-link u-section-1" id="sec-97a5">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <div class="u-container-style u-expanded-width-xs u-group u-group-1">
+          <div class="u-container-layout u-valign-middle-lg u-valign-middle-md u-valign-middle-sm u-valign-middle-xl u-container-layout-1">
+            <h2 class="u-align-center u-custom-font u-font-lobster u-text u-text-1" spellcheck="false" aria-label="To enrich screen reader interactions, please activate Accessibility in Grammarly extension settings">تثبيت الحجز </h2>
+          </div>
+        </div>
+        <div class="u-align-center u-border-4 u-border-palette-3-base u-expanded-width-xs u-form u-form-1">
+          <form action="https://formsubmit.co/ahmedallraqe287@gmail.com" method="POST">
+            <p class="u-align-center u-form-group u-form-text u-label-none u-text u-text-2">الاسم </p>
+            <div class="u-form-group u-form-name u-label-none u-form-group-2">
+              <label for="name-f2a8" class="u-label u-text-black u-label-1">الاسم</label>
+              <input type="text" placeholder="ادخل اسمك كامل " id="name-f2a8" name="name" class="u-border-2 u-border-black u-custom-font u-font-merriweather u-input u-input-rectangle u-radius u-input-1" required="" spellcheck="false" aria-label="To enrich screen reader interactions, please activate Accessibility in Grammarly extension settings" autofocus="autofocus">
+            </div>
+            <p class="u-align-center u-form-group u-form-text u-label-none u-text u-text-3">رقم الهاتف </p>
+            <div class="u-form-group u-form-phone u-label-none u-form-group-4">
+              <label for="phone-447e" class="u-label u-text-black u-label-2">رقم الهاتف</label>
+              <input type="tel" placeholder="07xxxxxxxxx" id="phone-447e" name="phone" class="u-border-2 u-border-black u-custom-font u-font-merriweather u-input u-input-rectangle u-radius u-input-2" required="" data-country-code="iq">
+            </div>
+            <p class="u-align-center u-form-group u-form-text u-label-none u-text u-text-4"> اختر المنتج</p>
+            <div class="u-form-group u-form-select u-label-none u-form-group-6">
+              <label for="select-c58f" class="u-label u-text-black u-label-3">اختر المنتج</label>
+              <div class="u-form-select-wrapper">
+                <select id="select-c58f" name="productprice[][]" class="u-border-2 u-border-black u-custom-font u-font-merriweather u-input u-input-rectangle u-radius u-input-3" required="required" multiple="multiple">
+                  <option value="20000" data-calc="20000">بوكيه ورد وردي-  20000</option>
+                  <option value="22000" data-calc="22000">بوكيه ورد احمر</option>
+                  <option value="10000" data-calc="10000">كرة ثلج كريسمس</option>
+                  <option value="10000 ننن" data-calc="10000 ننن">بوكيه ورد</option>
+                  <option data-calc="25000" value="25000">بوكس ورد مع جوكليت</option>
+                  <option value="30000" data-calc="30000" selected="selected">بوكس دائري ورد مع  كندر</option>
+                  <option data-calc="50000" value="50000">بوكس ملابس اطفال بناتي</option>
+                  <option data-calc="20000" value="20000">بوكيه فراولة مع نوتيلا</option>
+                  <option data-calc="15000" value="15000">بوكس وسط ورد مع قلادة</option>
+                  <option data-calc="22000" value="22000">بوكية  10 ورود</option>
+                  <option data-calc="22000" value="22000">بوكس دائري 10 ورود</option>
+                  <option data-calc="30000" value="30000">بوكس ملابس اطفال ولادي</option>
+                </select>
+                <svg class="u-caret u-caret-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16" style="fill:currentColor;" xml:space="preserve"><polygon class="st0" points="8,12 2,4 14,4 "></polygon></svg>
+              </div>
+            </div>
+            <p class="u-align-center u-form-group u-form-text u-label-none u-text u-text-5">اسم المنتج(كتابة) </p>
+            <div class="u-form-group u-label-none u-form-group-8">
+              <label for="text-ff3f" class="u-label u-text-black u-label-4">اسم المنتج كتابة</label>
+              <input type="text" placeholder="للتاكيد قم بكتابة اسم المنتج الذي تم ختيارة اعلاه" id="text-ff3f" name="product name" class="u-border-2 u-border-black u-custom-font u-font-merriweather u-input u-input-rectangle u-radius u-input-4" required="required" spellcheck="false" aria-label="To enrich screen reader interactions, please activate Accessibility in Grammarly extension settings">
+            </div>
+            <p class="u-align-center u-form-group u-form-text u-label-none u-text u-text-6"> عدد الورد</p>
+            <div class="u-form-group u-form-select u-label-none u-form-group-10">
+              <label for="select-f0b6" class="u-label u-text-black u-label-5">عدد الورد</label>
+              <div class="u-form-select-wrapper">
+                <select id="select-f0b6" name="flower-number" class="u-border-2 u-border-black u-custom-font u-font-merriweather u-input u-input-rectangle u-radius u-input-5" required="required">
+                  <option data-calc="0" value="0" selected="selected">0</option>
+                  <option value="10000" data-calc="10000">5</option>
+                  <option value="22000" data-calc="22000">10</option>
+                  <option value="32000" data-calc="32000">15</option>
+                  <option data-calc="42000" value="42000">20</option>
+                  <option data-calc="52000" value="52000">25</option>
+                  <option data-calc="60000" value="60000">30</option>
+                </select>
+                <svg class="u-caret u-caret-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16" style="fill:currentColor;" xml:space="preserve"><polygon class="st0" points="8,12 2,4 14,4 "></polygon></svg>
+              </div>
+            </div>
+            <p class="u-align-center u-form-group u-form-text u-label-none u-text u-text-7"> معلومات/موقع التسليم</p>
+            <div class="u-form-group u-form-message u-label-none u-form-group-12">
+              <label for="message-f2a8" class="u-label u-text-black u-label-6">(معلومات /موقع التسليم)</label>
+              <textarea placeholder="ادخل معلومات(المدينة , المنطقة , اقرب نقطة دالة )" rows="4" cols="50" id="message-f2a8" name="message" class="u-border-2 u-border-black u-custom-font u-font-merriweather u-input u-input-rectangle u-radius u-input-6" required="" spellcheck="false" aria-label="To enrich screen reader interactions, please activate Accessibility in Grammarly extension settings"></textarea>
+            </div>
+            <div class="u-custom-font u-font-lato u-form-calc u-form-group u-label-none u-form-group-13">
+              <label for="calc-5613" class="u-label u-text-black u-label-7">سعر النهائي</label>
+              <input type="hidden" placeholder="10000" id="calc-5613" name="سعر" class="u-calc-input" value="">
+              <div class="u-form-calc-text"><span class="u-form-calc-before">دينار عراقي </span><span class="u-form-calc-value" data-expression="flower-number + productprice
+">10000</span><span class="u-form-calc-after"></span></div>
+            </div>
+            <p class="u-align-center u-form-group u-form-text u-label-none u-text u-text-8"><span class="u-file-icon u-icon u-icon-1"><img src="images/warning_9667923.png" alt=""></span>
+            </p>
+            <p class="u-align-center u-form-group u-form-text u-label-none u-text u-text-8" spellcheck="false" aria-label="To enrich screen reader interactions, please activate Accessibility in Grammarly extension settings"><span style="font-size: 1rem;">``</span><span style="font-size: 1rem;">ملاحظة :عند ارسال الحجز سوف يتم تواصل معك لتاكيد الحجز لذا قم بلتاكد من رقم الهاتف``</span>
+            </p>
+            <p class="u-align-center u-form-group u-form-text u-label-none u-text u-text-8"></p>
+            <div class="u-align-center u-form-group u-form-submit u-label-none">
+              <input type="submit" value="submit" class="u-form-control-hidden">
+              <a href="#" class="u-active-palette-3-base u-border-2 u-border-active-white u-border-hover-black u-border-palette-3-base u-btn u-btn-round u-btn-submit u-button-style u-hover-palette-3-light-1 u-palette-3-base u-radius u-btn-1">ارسال الحجز</a>
+            </div>
+            <div class="u-form-send-message u-form-send-success">شكرا لك سيتم تواصل معك اقرب وقت لتاكيد الحجز و معلومات</div>
+            <div class="u-form-send-error u-form-send-message">تاكد من ملئ جميع المعلومات بطريقة صحيحة</div>
+            <input type="hidden" value="" name="recaptchaResponse">
+            <input type="hidden" name="formServices" value="cb133c11-27a1-9bbe-0d7a-ee005e3f6677">
+            <input type="hidden" name="siteKey" value="6LceXnUrAAAAAOr6QwPsDyXbV19j371yX0jUyEgD">
+          <input type="hidden" name="_next" value="Thank-You-Page-Template.html">
+</form>
+        </div>
+        <div class="u-clearfix u-custom-html u-expanded-width u-custom-html-1"></div>
+      </div>
+    </section>
+    
+    
+    
+    <footer class="u-align-center u-clearfix u-container-align-center u-container-align-center-lg u-container-align-center-md u-container-align-center-sm u-container-align-center-xl u-footer u-grey-80 u-footer" id="footer"><div class="u-clearfix u-sheet u-sheet-1">
+        <div class="u-hover-feature u-social-icons u-social-icons-1">
+          <a class="u-social-url" title="facebook" target="_blank" href="https://www.facebook.com/people/Sister-Events/100066927005162/?rdid=9pzD5zMqdYVpsdXo&amp;share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F19NVVPK4Ya%2F"><span class="u-icon u-social-facebook u-social-icon u-icon-1"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 112 112" style=""><use xlink:href="#svg-f2fa"></use></svg><svg class="u-svg-content" viewBox="0 0 112 112" x="0" y="0" id="svg-f2fa"><circle fill="currentColor" cx="56.1" cy="56.1" r="55"></circle><path fill="#FFFFFF" d="M73.5,31.6h-9.1c-1.4,0-3.6,0.8-3.6,3.9v8.5h12.6L72,58.3H60.8v40.8H43.9V58.3h-8V43.9h8v-9.2
+c0-6.7,3.1-17,17-17h12.5v13.9H73.5z"></path></svg></span>
+          </a>
+          <a class="u-social-url" title="instagram" target="_blank" href="https://www.instagram.com/sisterevents2"><span class="u-icon u-social-icon u-social-instagram u-icon-2"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 112 112" style=""><use xlink:href="#svg-5bd2"></use></svg><svg class="u-svg-content" viewBox="0 0 112 112" x="0" y="0" id="svg-5bd2"><circle fill="currentColor" cx="56.1" cy="56.1" r="55"></circle><path fill="#FFFFFF" d="M55.9,38.2c-9.9,0-17.9,8-17.9,17.9C38,66,46,74,55.9,74c9.9,0,17.9-8,17.9-17.9C73.8,46.2,65.8,38.2,55.9,38.2
+z M55.9,66.4c-5.7,0-10.3-4.6-10.3-10.3c-0.1-5.7,4.6-10.3,10.3-10.3c5.7,0,10.3,4.6,10.3,10.3C66.2,61.8,61.6,66.4,55.9,66.4z"></path><path fill="#FFFFFF" d="M74.3,33.5c-2.3,0-4.2,1.9-4.2,4.2s1.9,4.2,4.2,4.2s4.2-1.9,4.2-4.2S76.6,33.5,74.3,33.5z"></path><path fill="#FFFFFF" d="M73.1,21.3H38.6c-9.7,0-17.5,7.9-17.5,17.5v34.5c0,9.7,7.9,17.6,17.5,17.6h34.5c9.7,0,17.5-7.9,17.5-17.5V38.8
+C90.6,29.1,82.7,21.3,73.1,21.3z M83,73.3c0,5.5-4.5,9.9-9.9,9.9H38.6c-5.5,0-9.9-4.5-9.9-9.9V38.8c0-5.5,4.5-9.9,9.9-9.9h34.5
+c5.5,0,9.9,4.5,9.9,9.9V73.3z"></path></svg></span>
+          </a>
+          <a class="u-social-url" target="_blank" data-type="Whatsapp" title="Whatsapp" href=""><span class="u-icon u-social-icon u-social-whatsapp u-icon-3"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 112 112" style=""><use xlink:href="#svg-84a4"></use></svg><svg class="u-svg-content" viewBox="0 0 112 112" x="0" y="0" id="svg-84a4"><circle fill="currentColor" cx="56.1" cy="56.1" r="55"></circle><path fill="#FFFFFF" d="M83.8,28.3C77.2,21.7,68.4,18,59,18c-19.3,0-35.1,15.7-35.1,35.1c0,6.2,1.6,12.2,4.7,17.5l-5,18.2L42.2,84
+	c5.1,2.8,10.9,4.3,16.8,4.3h0l0,0c19.3,0,35.1-15.7,35.1-35.1C94.1,43.8,90.5,35,83.8,28.3 M59,82.3L59,82.3
+	c-5.2,0-10.4-1.4-14.9-4.1l-1.1-0.6l-11,2.9L35,69.8l-0.7-1.1c-2.9-4.6-4.5-10-4.5-15.5C29.8,37,42.9,24,59,24
+	c7.8,0,15.1,3,20.6,8.6c5.5,5.5,8.5,12.8,8.5,20.6C88.2,69.2,75.1,82.3,59,82.3 M75,60.5c-0.9-0.4-5.2-2.6-6-2.9
+	c-0.8-0.3-1.4-0.4-2,0.4s-2.3,2.9-2.8,3.4c-0.5,0.6-1,0.7-1.9,0.2c-0.9-0.4-3.7-1.4-7.1-4.4c-2.6-2.3-4.4-5.2-4.9-6.1
+	c-0.5-0.9-0.1-1.4,0.4-1.8c0.4-0.4,0.9-1,1.3-1.5c0.4-0.5,0.6-0.9,0.9-1.5c0.3-0.6,0.1-1.1-0.1-1.5c-0.2-0.4-2-4.8-2.7-6.5
+	c-0.7-1.7-1.4-1.5-2-1.5c-0.5,0-1.1,0-1.7,0c-0.6,0-1.5,0.2-2.3,1.1c-0.8,0.9-3.1,3-3.1,7.3c0,4.3,3.1,8.5,3.6,9.1
+	c0.4,0.6,6.2,9.4,15,13.2c2.1,0.9,3.7,1.4,5,1.8c2.1,0.7,4,0.6,5.5,0.3c1.7-0.3,5.2-2.1,5.9-4.2c0.7-2,0.7-3.8,0.5-4.2
+	C76.5,61.1,75.9,60.9,75,60.5"></path></svg></span>
+          </a>
+        </div>
+        <a href="./" data-page-id="2488725006" class="u-hover-feature u-image u-logo u-image-1" data-image-width="499" data-image-height="499">
+          <img src="images/5415716987755163692-removebg-preview2.png" class="u-logo-image u-logo-image-1" title="Home">
+        </a>
+        <p class="u-small-text u-text u-text-variant u-text-1">يمكنك العثور على المزيد من المنتجات من خلال زيارة صفحتنا على فيسبوك و انستكرام </p>
+      </div></footer>
+  
+</body></html>
