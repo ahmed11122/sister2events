@@ -172,26 +172,85 @@
           </div>
         </div>
         <div class="u-align-center u-border-4 u-border-palette-3-base u-expanded-width-xs u-form u-form-1">
-        <form action="https://getform.io/f/bmdmozda" method="POST">
-    <input type="text" name="name">
-    <input type="email" name="email">
-    <input type="text" name="message">
-    <!-- add hidden Honeypot input to prevent spams -->
-    <input type="hidden" name="_gotcha" style="display:none !important">
-    <!-- checkbox handle -->
-    <input type="checkbox" name="subscribe" value="yes" checked>
-    <input type="hidden" name="subscribe" value="no">
-    <!-- radio button handle -->
-    <input type="radio" name="gender" value="male" checked>
-    <input type="radio" name="gender" value="female">
-    <input type="radio" name="gender" value="other">
-    <!-- select field handle -->
-    <select name="work-experience">
-        <option value="one-year">0-1 years</option>
-        <option value="one-five-years">1-5 years</option>
-    </select>
-    <button type="submit">Send</button>
-</form>
+        <form action="https://getform.io/f/bmdmozda" method="POST"> 
+            <p class="u-align-center u-form-group u-form-text u-label-none u-text u-text-2">الاسم </p>
+            <div class="u-form-group u-form-name u-label-none u-form-group-2">
+              <label for="name-f2a8" class="u-label u-text-black u-label-1">الاسم</label>
+              <input type="text" placeholder="ادخل اسمك كامل " id="name-f2a8" name="name" class="u-border-2 u-border-black u-custom-font u-font-merriweather u-input u-input-rectangle u-radius u-input-1" required="" spellcheck="false" aria-label="To enrich screen reader interactions, please activate Accessibility in Grammarly extension settings" autofocus="autofocus">
+            </div>
+            <p class="u-align-center u-form-group u-form-text u-label-none u-text u-text-3">رقم الهاتف </p>
+            <div class="u-form-group u-form-phone u-label-none u-form-group-4">
+              <label for="phone-447e" class="u-label u-text-black u-label-2">رقم الهاتف</label>
+              <input type="tel" placeholder="07xxxxxxxxx" id="phone-447e" name="phone" class="u-border-2 u-border-black u-custom-font u-font-merriweather u-input u-input-rectangle u-radius u-input-2" required="" data-country-code="iq">
+            </div>
+            <p class="u-align-center u-form-group u-form-text u-label-none u-text u-text-4"> اختر المنتج</p>
+            <div class="u-form-group u-form-select u-label-none u-form-group-6">
+              <label for="select-c58f" class="u-label u-text-black u-label-3">اختر المنتج</label>
+              <div class="u-form-select-wrapper">
+                <select id="select-c58f" name="productprice[][]" class="u-border-2 u-border-black u-custom-font u-font-merriweather u-input u-input-rectangle u-radius u-input-3" required="required" multiple="multiple">
+                  <option value="20000" data-calc="20000">بوكيه ورد وردي-  20000</option>
+                  <option value="22000" data-calc="22000">بوكيه ورد احمر</option>
+                  <option value="10000" data-calc="10000">كرة ثلج كريسمس</option>
+                  <option value="10000 ننن" data-calc="10000 ننن">بوكيه ورد</option>
+                  <option data-calc="25000" value="25000">بوكس ورد مع جوكليت</option>
+                  <option value="30000" data-calc="30000" selected="selected">بوكس دائري ورد مع  كندر</option>
+                  <option data-calc="50000" value="50000">بوكس ملابس اطفال بناتي</option>
+                  <option data-calc="20000" value="20000">بوكيه فراولة مع نوتيلا</option>
+                  <option data-calc="15000" value="15000">بوكس وسط ورد مع قلادة</option>
+                  <option data-calc="22000" value="22000">بوكية  10 ورود</option>
+                  <option data-calc="22000" value="22000">بوكس دائري 10 ورود</option>
+                  <option data-calc="30000" value="30000">بوكس ملابس اطفال ولادي</option>
+                </select>
+                <svg class="u-caret u-caret-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16" style="fill:currentColor;" xml:space="preserve"><polygon class="st0" points="8,12 2,4 14,4 "></polygon></svg>
+              </div>
+            </div>
+            <p class="u-align-center u-form-group u-form-text u-label-none u-text u-text-5">اسم المنتج(كتابة) </p>
+            <div class="u-form-group u-label-none u-form-group-8">
+              <label for="text-ff3f" class="u-label u-text-black u-label-4">اسم المنتج كتابة</label>
+              <input type="text" placeholder="للتاكيد قم بكتابة اسم المنتج الذي تم ختيارة اعلاه" id="text-ff3f" name="product name" class="u-border-2 u-border-black u-custom-font u-font-merriweather u-input u-input-rectangle u-radius u-input-4" required="required" spellcheck="false" aria-label="To enrich screen reader interactions, please activate Accessibility in Grammarly extension settings">
+            </div>
+            <p class="u-align-center u-form-group u-form-text u-label-none u-text u-text-6"> عدد الورد</p>
+            <div class="u-form-group u-form-select u-label-none u-form-group-10">
+              <label for="select-f0b6" class="u-label u-text-black u-label-5">عدد الورد</label>
+              <div class="u-form-select-wrapper">
+                <select id="select-f0b6" name="flower-number" class="u-border-2 u-border-black u-custom-font u-font-merriweather u-input u-input-rectangle u-radius u-input-5" required="required">
+                  <option data-calc="0" value="0" selected="selected">0</option>
+                  <option value="10000" data-calc="10000">5</option>
+                  <option value="22000" data-calc="22000">10</option>
+                  <option value="32000" data-calc="32000">15</option>
+                  <option data-calc="42000" value="42000">20</option>
+                  <option data-calc="52000" value="52000">25</option>
+                  <option data-calc="60000" value="60000">30</option>
+                </select>
+                <svg class="u-caret u-caret-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16" style="fill:currentColor;" xml:space="preserve"><polygon class="st0" points="8,12 2,4 14,4 "></polygon></svg>
+              </div>
+            </div>
+            <p class="u-align-center u-form-group u-form-text u-label-none u-text u-text-7"> معلومات/موقع التسليم</p>
+            <div class="u-form-group u-form-message u-label-none u-form-group-12">
+              <label for="message-f2a8" class="u-label u-text-black u-label-6">(معلومات /موقع التسليم)</label>
+              <textarea placeholder="ادخل معلومات(المدينة , المنطقة , اقرب نقطة دالة )" rows="4" cols="50" id="message-f2a8" name="message" class="u-border-2 u-border-black u-custom-font u-font-merriweather u-input u-input-rectangle u-radius u-input-6" required="" spellcheck="false" aria-label="To enrich screen reader interactions, please activate Accessibility in Grammarly extension settings"></textarea>
+            </div>
+            <div class="u-custom-font u-font-lato u-form-calc u-form-group u-label-none u-form-group-13">
+              <label for="calc-5613" class="u-label u-text-black u-label-7">سعر النهائي</label>
+              <input type="hidden" placeholder="10000" id="calc-5613" name="سعر" class="u-calc-input" value="">
+              <div class="u-form-calc-text"><span class="u-form-calc-before">دينار عراقي </span><span class="u-form-calc-value" data-expression="flower-number + productprice
+">10000</span><span class="u-form-calc-after"></span></div>
+            </div>
+            <p class="u-align-center u-form-group u-form-text u-label-none u-text u-text-8"><span class="u-file-icon u-icon u-icon-1"><img src="images/warning_9667923.png" alt=""></span>
+            </p>
+            <p class="u-align-center u-form-group u-form-text u-label-none u-text u-text-8" spellcheck="false" aria-label="To enrich screen reader interactions, please activate Accessibility in Grammarly extension settings"><span style="font-size: 1rem;">``</span><span style="font-size: 1rem;">ملاحظة :عند ارسال الحجز سوف يتم تواصل معك لتاكيد الحجز لذا قم بلتاكد من رقم الهاتف``</span>
+            </p>
+            <p class="u-align-center u-form-group u-form-text u-label-none u-text u-text-8"></p>
+            <div class="u-align-center u-form-group u-form-submit u-label-none">
+              <input type="submit" value="submit" class="u-form-control-hidden">
+              <a href="#" class="u-active-palette-3-base u-border-2 u-border-active-white u-border-hover-black u-border-palette-3-base u-btn u-btn-round u-btn-submit u-button-style u-hover-palette-3-light-1 u-palette-3-base u-radius u-btn-1">ارسال الحجز</a>
+            </div>
+            <div class="u-form-send-message u-form-send-success">شكرا لك سيتم تواصل معك اقرب وقت لتاكيد الحجز و معلومات</div>
+            <div class="u-form-send-error u-form-send-message">تاكد من ملئ جميع المعلومات بطريقة صحيحة</div>
+            <input type="hidden" value="" name="recaptchaResponse">
+            <input type="hidden" name="formServices" value="cb133c11-27a1-9bbe-0d7a-ee005e3f6677">
+            <input type="hidden" name="siteKey" value="6LceXnUrAAAAAOr6QwPsDyXbV19j371yX0jUyEgD">
+          </form>
         </div>
         <div class="u-clearfix u-custom-html u-expanded-width u-custom-html-1"></div>
       </div>
