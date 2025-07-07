@@ -7,10 +7,21 @@
 }
 
 .u-section-1 .u-text-1 {
+  --animation-custom_in-translate_x: 300px;
+  --animation-custom_in-translate_y: 0px;
+  --animation-custom_in-opacity: 0;
+  --animation-custom_in-rotate: 0deg;
+  --animation-custom_in-scale: 1;
   margin: 347px auto 0;
 }
 
 .u-section-1 .u-text-2 {
+  --animation-custom_in-translate_x: 0px;
+  --animation-custom_in-translate_y: 0px;
+  --animation-custom_in-opacity: 0;
+  --animation-custom_in-rotate: 0deg;
+  --animation-custom_in-scale: 0.3;
+  font-size: 1.25rem;
   margin: 47px auto 60px;
 }
 
